@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Manaswi Patil – AI/ML engineer</title>
+<meta name="description" content="B.Tech AIML student building AI systems end-to-end, from model to production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6f8; --surface:#e6ecf1; --ink:#0f1b2d; --muted:#4a586b; --rule:#c5d0da; --accent:#2457d6; --accent-ink:#ffffff;
+  --display:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --body:'Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0d141c;--surface:#16212d;--ink:#e7edf3;--muted:#9aa9ba;--rule:#26354a;--accent:#8aabff;--accent-ink:#0d141c}
+}
+:root[data-theme="dark"]{--bg:#0d141c;--surface:#16212d;--ink:#e7edf3;--muted:#9aa9ba;--rule:#26354a;--accent:#8aabff;--accent-ink:#0d141c}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;font-size:.95rem}
+header.top nav{display:flex;gap:1.25rem;flex-wrap:wrap}
+header.top a{color:var(--muted);text-decoration:none}
+header.top a:hover{color:var(--ink)}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,9vw,4.6rem);font-weight:700;letter-spacing:-.03em;margin-top:3rem}
+.lead{font-size:clamp(1.2rem,3.4vw,1.5rem);max-width:34rem;margin:1.25rem 0 0;color:var(--muted)}
+.status{margin:1.5rem 0 0;padding-left:.9rem;border-left:3px solid var(--accent);max-width:34rem}
+/* the pipeline: the one memorable element */
+.pipe{margin:3rem 0 0}
+.pipe ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.pipe li{display:flex;align-items:center;gap:.5rem}
+.pipe li+li::before{content:"";width:1.25rem;height:2px;background:var(--rule)}
+.pipe button{font:600 1rem var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:.5rem 1rem;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.pipe button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pipe p{margin:1rem 0 0;min-height:3.2rem;max-width:36rem;color:var(--muted)}
+section{padding:4.5rem 0 0}
+h2{font-size:1.75rem;font-weight:700;letter-spacing:-.02em;margin-bottom:1.5rem}
+.proj{padding:1.5rem 0;border-top:1px solid var(--rule)}
+.proj.feature{border-top:3px solid var(--accent);padding-top:1.75rem}
+.proj h3{font-size:1.35rem;font-weight:500}
+.proj.feature h3{font-size:1.8rem;font-weight:700}
+.proj p{margin:.5rem 0 0;max-width:38rem}
+.stack{color:var(--muted);font-size:.97rem;margin-top:.6rem}
+.links{margin-top:.6rem;display:flex;gap:1.1rem;flex-wrap:wrap;font-weight:600}
+dl{margin:0}
+dl div{display:grid;grid-template-columns:9rem 1fr;gap:.25rem 1.5rem;padding:1rem 0;border-top:1px solid var(--rule)}
+dt{color:var(--muted)}
+dd{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none}
+.chips li{background:var(--surface);border-radius:6px;padding:.25rem .7rem;font-size:.98rem}
+.contact p{max-width:34rem}
+.contact .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.7rem 1.3rem;border-radius:8px;text-decoration:none;font-weight:600}
+footer{padding:4rem 0 2.5rem;color:var(--muted);font-size:.92rem}
+@media (max-width:34rem){dl div{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong style="font-family:var(--display)">Manaswi Patil</strong>
+    <nav aria-label="Sections"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <h1>I build AI systems that make it to production.</h1>
+    <p class="lead">B.Tech student in AI and machine learning at NMIMS MPSTME, Shirpur (2027 batch). I take a model from notebook to a deployed product, with the API, interface and database around it.</p>
+    <p class="status">Open to full-stack and ML engineering roles. Graduating in 2027.</p>
+
+    <div class="pipe" aria-label="How a project of mine ships">
+      <ol>
+        <li><button type="button" aria-pressed="true" data-i="0">Model</button></li>
+        <li><button type="button" aria-pressed="false" data-i="1">API</button></li>
+        <li><button type="button" aria-pressed="false" data-i="2">Interface</button></li>
+        <li><button type="button" aria-pressed="false" data-i="3">Data</button></li>
+        <li><button type="button" aria-pressed="false" data-i="4">Deploy</button></li>
+      </ol>
+      <p id="pipe-text" aria-live="polite"></p>
+    </div>
+
+    <section id="work">
+      <h2>Selected work</h2>
+
+      <article class="proj feature">
+        <h3>News Snap</h3>
+        <p>A full-stack news summarizer. A fine-tuned T5 transformer condenses articles, served through FastAPI with JWT authentication to a React front end, and deployed live on Render.</p>
+        <div class="stack">T5, FastAPI, React, MySQL, JWT, Render</div>
+        <div class="links"><a href="https://github.com/Manaswi78/news_summariser_fullstack">Source on GitHub</a><a href="https://github.com/Manaswi78/News-Article-Summariser">Model notebook</a></div>
+      </article>
+
+      <article class="proj">
+        <h3>Steel surface defect detection</h3>
+        <p>Capstone research on spotting defects in cold-rolled steel. A lightweight student model learns from a YOLO26 teacher through knowledge distillation, so it can run on edge hardware.</p>
+        <div class="stack">YOLO26, knowledge distillation, PyTorch</div>
+      </article>
+
+      <article class="proj">
+        <h3>E-waste classification</h3>
+        <p>Transfer learning with EfficientNetV2B0 to sort images of phones, batteries and circuit boards, reaching 84% accuracy.</p>
+        <div class="stack">EfficientNetV2B0, TensorFlow, Jupyter</div>
+        <div class="links"><a href="https://github.com/Manaswi78/E-Waste-Classification-Using-EfficientNetV2B0">Source on GitHub</a></div>
+      </article>
+
+      <article class="proj">
+        <h3>AQI analytics dashboard</h3>
+        <p>Air quality data analysed and visualised in Power BI, so trends across locations are readable at a glance.</p>
+        <div class="stack">Power BI</div>
+        <div class="links"><a href="https://github.com/Manaswi78/AQI-Data-Analysis-Using-PowerBI">Source on GitHub</a></div>
+      </article>
+
+      <article class="proj">
+        <h3>Also on GitHub</h3>
+        <p>A <a href="https://github.com/Manaswi78/lost-and-found-system">lost and found system</a> in JavaScript, and <a href="https://github.com/Manaswi78/ResearchMind">ResearchMind</a> in Python.</p>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>Background</h2>
+      <dl>
+        <div><dt>Education</dt><dd>B.Tech, Artificial Intelligence and Machine Learning, SVKM’s NMIMS MPSTME, Shirpur. Batch of 2027.</dd></div>
+        <div><dt>Internship</dt><dd>AI-based e-waste classification with AICTE, Shell India Markets and Edunet Foundation (Skills4Future), 16 June to 16 July 2025.</dd></div>
+        <div><dt>Certifications</dt><dd>NPTEL Machine Learning; NPTEL Deep Learning (IIT Ropar); Data Science Workshop, IIT Bombay; AWS Skill Builder courses.</dd></div>
+        <div><dt>Community</dt><dd>Campus Ambassador for IIT Bombay Techfest 2025. Technical workshop facilitator with the Nandurbar Cyber Crime Investigation Cell.</dd></div>
+        <div><dt>Tools</dt><dd><ul class="chips"><li>Python</li><li>FastAPI</li><li>React</li><li>PyTorch</li><li>TensorFlow</li><li>Hugging Face</li><li>MySQL</li><li>Docker</li><li>Git</li><li>Power BI</li></ul></dd></div>
+        <div><dt>Exploring</dt><dd>Reinforcement learning for control systems, and knowledge distillation for edge deployment.</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s talk</h2>
+      <p>I’m looking for roles where I can own a feature from model to deployment. The fastest way to reach me is email.</p>
+      <p><a class="btn" href="mailto:manasvi.patil343@gmail.com">Email me</a></p>
+      <p><a href="https://www.linkedin.com/in/manaswipatil07">LinkedIn</a> &nbsp; <a href="https://github.com/Manaswi78">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>© 2026 Manaswi Patil</footer>
+</div>
+<script>
+(function(){
+  var steps=[
+    "Model: fine-tune a transformer or CNN, then measure it honestly before anything else is built around it.",
+    "API: wrap the model in FastAPI with JWT authentication so it behaves like a real service.",
+    "Interface: a React front end that shows the result without making people think about the model.",
+    "Data: MySQL stores users and history, so the product remembers what it has done.",
+    "Deploy: ship it live on Render, because a project nobody can open is not finished."
+  ];
+  var btns=document.querySelectorAll('.pipe button'),out=document.getElementById('pipe-text');
+  function show(i){
+    btns.forEach(function(b,j){b.setAttribute('aria-pressed',String(i===j))});
+    out.textContent=steps[i];
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.i)})});
+  show(0);
+})();
+</script>
+</body>
+</html>
